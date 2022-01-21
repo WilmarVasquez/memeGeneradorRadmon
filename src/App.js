@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './jeison_temporales/Header';
+import Meme from './jeison_temporales/Meme' 
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+function App () {
+    
+
+    /*  const [jokeComment, setJokeComment] = React.useState(jokeData)
+    const jokeElements = jokeComment.map(joke => (
+        <Joke 
+            key={joke.id}
+            comment={joke.comment}
+            punchline={joke.punchline}
+            />
+    )) */
+ 
+    /* fetch("https://api.imgflip.com/get_memes")
+    .then(res => res.json())
+    .then(data => setSMmeGetData(data)) */
+
+
+  
+
+return (
+
+        <div>
+            <Header/>
+            <Meme/>
+        </div> 
+         
+       /*  <div>
+           {jokeElements}
+           /// <pre>{JSON.stringify(memeGetData, null, 2)}</pre>
+        </div> */ 
+                )
 }
 
-export default App;
+export default App
